@@ -12,17 +12,17 @@
 
     <script>
         function sendEmail() {
-            // Specify your email address
+            
             var emailAddress = "youssif5655@gmail.com";
-            // Specify the subject for the email
+            
             var subject = "Pub's Account Deletion Request";
-            // Specify the body of the email
+           
             var body = "Please delete my account and associated data.";
 
-            // Construct the mailto URL with pre-filled email fields
+            
             var mailtoURL = "mailto:" + encodeURIComponent(emailAddress) + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
 
-            // Open the default email client with the pre-filled email
+           
             window.location.href = mailtoURL;
         }
     </script>
