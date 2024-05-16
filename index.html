@@ -4,25 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Request Account Deletion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        button {
+            display: block;
+            width: 200px;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Request Account Deletion</h1>
-    <p>If you wish to delete your account and associated data, please click the button below to send an email:</p>
-    <button onclick="sendEmail()">Send Email</button>
+    <div class="container">
+        <h1>Request Account Deletion</h1>
+        <p>If you wish to delete your account and associated data, please click the button below to send an email:</p>
+        <button onclick="sendEmail()">Send Email</button>
+    </div>
 
     <script>
         function sendEmail() {
-            
             var emailAddress = "youssif5655@gmail.com";
-            
             var subject = "Pub's Account Deletion Request";
-           
             var body = "Please delete my account and associated data.";
 
-            
             var mailtoURL = "mailto:" + encodeURIComponent(emailAddress) + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
 
-           
             window.location.href = mailtoURL;
         }
     </script>
